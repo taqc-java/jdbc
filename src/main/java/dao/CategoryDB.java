@@ -91,11 +91,4 @@ public class CategoryDB {
         return children;
     }
 
-
-
-    public static void main(String[] args) throws SQLException, IOException {
-        //System.out.println(new CategoryDB().update(new Category(7l, "abc1", "def1")));
-        //System.out.println(new CategoryDB().titlePart("1"));
-        //new DBUtil().executeFile("init.sql");
-    }
 }
