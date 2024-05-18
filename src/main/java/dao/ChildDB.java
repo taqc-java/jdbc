@@ -91,10 +91,4 @@ public class ChildDB {
         return children;
     }
 
-
-    public static void main(String[] args) throws SQLException, IOException {
-        System.out.println(new ChildDB().update(new Child(1L, "FN1", "LN", LocalDate.now())));
-        //System.out.println(new CategoryDB().titlePart("1"));
-        //new DBUtil().executeFile("init.sql");
-    }
 }
