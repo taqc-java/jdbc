@@ -18,4 +18,9 @@ For methods of CategoryDB class there are exist tests in class CategoryDB (in pa
 
 For populate initial data in database you can use method executeFile from class utils.DBUtil.java
 
+**After creating your tests in Actions you should have something like this picture.**
+<img width="880" alt="image" src="https://github.com/taqc-java/jdbc/assets/61456363/53fe5bd6-d056-49a8-8442-9b08515dbae8">
+
+
+
 
