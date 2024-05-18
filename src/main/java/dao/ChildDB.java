@@ -83,7 +83,10 @@ public class ChildDB {
             Long id = rs.getLong("id");
             String firstName = rs.getString("first_name");
             String lastName = rs.getString("last_name");
-            LocalDate date = LocalDate.parse(rs.getString("birth_date"));
+            LocalDate date = null;
+            if (rs.getString("birth_date") != null){
+                date = LocalDate.parse(rs.getString("birth_date"));
+            }
             var child = new Child(id, firstName, lastName, date);
 
             children.add(child);
