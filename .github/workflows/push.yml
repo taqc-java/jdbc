@@ -28,7 +28,6 @@ jobs:
           - 5432:5432
 
     steps:
-      # run steps required in the workflow
       - run: |
           sudo apt-get update && sudo apt-get install --yes --no-install-recommends postgresql-client
       - run: |
@@ -45,7 +44,7 @@ jobs:
       - name: Test with Maven
         run: mvn clean test         
 
-       - name: Test Report
+      - name: Test Report
         uses: dorny/test-reporter@v1
         if: success() || failure()   
         with:
