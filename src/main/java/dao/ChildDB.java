@@ -70,7 +70,7 @@ public class ChildDB {
         return fromResultSetToChild(rs);
     }
 
-    public List<Child> allWithoutBirthDate(int age) throws SQLException {
+    public List<Child> allWithoutBirthDate() throws SQLException {
         String query = "select * from child where birth_date is null;";
         PreparedStatement statement = conn.prepareStatement(query);
         ResultSet rs = statement.executeQuery();
